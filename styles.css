@@ -1,25 +1,13 @@
-/* Full Width Layout */
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-
+/* Basic styling */
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background: #f0f2f5;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow-x: hidden; /* Prevents horizontal scroll */
 }
 
-header, footer, main, nav ul, .output-container, input[type="text"], .btn {
-    width: 100%; /* Ensure full width */
-    max-width: 100%; /* Prevent any max-width from restricting full width */
-}
-
-header, footer {
-    background-color: #003366;
+header {
+    background-color: #003366; /* Dark blue header */
     padding: 10px 0;
     text-align: center;
 }
@@ -27,7 +15,6 @@ header, footer {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     text-align: center;
 }
 
@@ -46,6 +33,10 @@ main {
     text-align: center;
     padding: 20px;
     color: #333;
+}
+
+main h1 {
+    color: #003366;
 }
 
 input[type="text"], .btn {
@@ -89,6 +80,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
