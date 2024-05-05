@@ -78,13 +78,15 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-bottom`: 20px;
+    margin-bottom: 20px;
 }
 
 footer a {
     color: lightblue;
     text-decoration: none;
     margin: 0 10px;
+    margin-top: 20px;
+    
 }
 
 footer a:hover {
