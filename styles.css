@@ -16,6 +16,7 @@ body, html {
 header, footer, main, nav ul, .output-container, input[type="text"], .btn {
     width: 100%; /* Ensure full width */
     max-width: 100%; /* Prevent any max-width from restricting full width */
+    margin-bottom: 20px;
 }
 
 header, footer {
@@ -77,6 +78,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    margin-bottom`: 20px;
 }
 
 footer a {
