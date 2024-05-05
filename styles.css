@@ -30,12 +30,36 @@ nav ul li a {
 
 main {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px;
     color: #333;
 }
 
 main h1 {
     color: #003366;
+}
+
+input[type="text"], .btn {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.output-container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 footer {
