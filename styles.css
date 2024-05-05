@@ -5,7 +5,6 @@
 
 body, html {
     
-    padding: 0;
     font-family: Arial, sans-serif;
     background: #fff;
     width: 100%; /* Full width */
@@ -81,7 +80,7 @@ footer {
 }
 
 footer a {
-    color: lightblue;
+    color: white;
     text-decoration: none;
     margin: 0 10px;
     margin-bottom: 20px;
