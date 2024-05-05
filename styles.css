@@ -1,73 +1,68 @@
-/* Basic reset for margins and padding across all elements */
-* {
+body, html {
+    height: 100%;  /* Ensure the page covers full height */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    height: 100vh; /* Sets the body height to fill the full viewport height */
-    display: flex;
-    flex-direction: column;
 }
 
 header {
+    text-align: center;
+    padding: 1rem;
     background-color: #007bff;
     color: #ffffff;
-    padding: 20px 0; /* Increased padding for better visual */
-    width: 100%;
-    text-align: center; /* Ensures everything in the header is centered */
 }
 
 header h1 {
-    font-size: 2.5em; /* Enlarges the title */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Ensures there is no extra padding around the title */
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;  /* Enlarge the title */
 }
 
 main {
-    flex: 1; /* Allows the main content to fill all available space */
+    padding: 1rem;
+    margin-top: 1rem;
+    flex: 1 0 auto; /* Flexbox properties to fill space */
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers the content horizontally */
-    justify-content: center; /* Centers the content vertically */
-    padding: 20px;
-}
-
-input[type="text"], button {
-    width: 300px; /* Standardizes width for text input and buttons */
-    padding: 10px;
-    margin-top: 10px;
-}
-
-button {
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none; /* Removes default border */
-}
-
-button:hover {
-    background-color: #0056b3;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center content vertically */
 }
 
 footer {
-    background-color: #007bff;
-    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em; /* Slightly smaller font size for smaller devices */
-    }
+.container-fluid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space distribution */
+}
 
-    input[type="text"], button {
-        width: 90%; /* Makes input and buttons wider on smaller screens */
+input[type="text"], button {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: none; /* Hidden by default, shown in responsive mode */
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    nav.active {
+        display: block;
     }
 }
