@@ -1,88 +1,64 @@
-/* Basic resets and font */
+/* Basic styling */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     background: #f0f2f5;
 }
 
-/* Styling for header and footer with gradient background */
-header, footer {
+header {
+    background-color: #003366; /* Dark blue header */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
     text-align: center;
-    padding: 1rem;
-    background-image: linear-gradient(120deg, #007bff, #6610f2);
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
-/* Main content area styling */
 main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    color: #333;
 }
 
-/* Styling for form inputs and buttons */
-input[type="text"], button, .form-check-input, .form-check-label {
-    margin: 10px;
-}
-
-button {
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive and interactive elements */
-.hamburger-menu {
-    cursor: pointer;
-    display: none; /* Only shown in mobile view */
-}
-
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-    }
-
-    nav.active, nav {
-        display: block;
-        margin-top: 10px;
-    }
-}
-
-/* Effects and transitions */
-input[type="text"] {
-    transition: all 0.3s ease-in-out;
-    border: 2px solid #007bff;
-    border-radius: 5px;
-}
-
-input[type="text"]:focus {
-    box-shadow: 0 0 8px #6610f2;
-    outline: none;
-    border-color: #6610f2;
+main h1 {
+    color: #003366;
 }
 
 footer {
-    padding: 1rem;
-    background-color: #343a40; /* Dark background for the footer */
-    color: #ffffff;
+    background-color: #003366;
+    color: white;
     text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 10px 0;
 }
 
 footer a {
-    color: #00bfff; /* Light blue color for links */
+    color: lightblue;
     text-decoration: none;
-    padding: 0 5px;
+    margin: 0 10px;
 }
 
 footer a:hover {
     text-decoration: underline;
-    color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
