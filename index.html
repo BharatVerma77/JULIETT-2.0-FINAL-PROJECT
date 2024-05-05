@@ -12,17 +12,28 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Contact</a>
+                <a class="navbar-brand" href="#">Phonetic Generator</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <h1>Phonetic Generator</h1>
     </header>
     <main class="container">
-        <section>
+        <section class="mt-4">
             <label for="textInput" class="form-label">Enter text:</label>
             <input id="textInput" type="text" placeholder="Enter text here..." class="form-control">
             <div class="form-check form-switch mt-2">
@@ -39,7 +50,7 @@
             <div id="output" class="alert alert-primary mt-4"></div>
         </section>
     </main>
-    <footer class="bg-primary text-white text-center p-3">
+    <footer class="bg-primary text-white text-center p-3 mt-4">
         <p>Created by [Your Name]</p>
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2F[username].github.io%2F[repository]" target="_blank">Check Page Validation</a> |
         <a href="https://github.com/[username]" target="_blank">My GitHub</a> |
