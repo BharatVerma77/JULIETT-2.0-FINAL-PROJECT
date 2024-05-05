@@ -1,40 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic reset for margins and padding across all elements */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header, footer {
-    text-align: center;
-    padding: 1rem;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh; /* Sets the body height to fill the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
     background-color: #007bff;
     color: #ffffff;
+    padding: 20px 0; /* Increased padding for better visual */
+    width: 100%;
+    text-align: center; /* Ensures everything in the header is centered */
+}
+
+header h1 {
+    font-size: 2.5em; /* Enlarges the title */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Ensures there is no extra padding around the title */
 }
 
 main {
-    padding: 1rem;
-    margin-top: 1rem;
+    flex: 1; /* Allows the main content to fill all available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+    padding: 20px;
 }
 
 input[type="text"], button {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    width: 300px; /* Standardizes width for text input and buttons */
+    padding: 10px;
+    margin-top: 10px;
 }
 
-.hamburger-menu {
+button {
     cursor: pointer;
-    display: none; /* Hidden by default, shown in responsive mode */
+    background-color: #007bff;
+    color: white;
+    border: none; /* Removes default border */
 }
 
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-    nav {
-        display: none;
+    header h1 {
+        font-size: 2em; /* Slightly smaller font size for smaller devices */
     }
-    .hamburger-menu {
-        display: block;
-    }
-    nav.active {
-        display: block;
+
+    input[type="text"], button {
+        width: 90%; /* Makes input and buttons wider on smaller screens */
     }
 }
